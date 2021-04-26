@@ -65,8 +65,8 @@ private:
 	{
 		using Counter = unsigned int;
 
-		Node(const Callback_ & callback, const Counter counter)
-			: callback(callback), counter(counter)
+		Node(const Callback_ & callback_, const Counter counter_)
+			: callback(callback_), counter(counter_)
 		{
 		}
 

@@ -87,7 +87,7 @@ class HasHash
 	template <typename C> static std::false_type test(...);    
 
 public:
-	enum { value = !! decltype(test<T>(0))() };
+	enum { value = !! decltype(test<T>(nullptr))() };
 };
 template <typename Key, typename Value, typename T, bool>
 struct SelectMap
